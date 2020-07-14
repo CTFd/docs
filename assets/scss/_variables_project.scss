@@ -1,0 +1,22 @@
+/*
+
+Add styles or override variables from the theme here.
+
+*/
+
+$primary: #bc3f48;
+$secondary: #f9f9f9;
+
+.btn {
+  border-radius: 0.25rem !important;
+}
+
+img {
+  max-width: 40%;
+  height: auto;
+}
+
+.td-main img {
+  border-style: initial;
+  border: 1px solid lightgray;
+}

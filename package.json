@@ -1,0 +1,25 @@
+{
+  "name": "ctfd-docs",
+  "version": "0.0.1",
+  "description": "CTFd documentation",
+  "main": "none.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CTFd/docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CTFd/docs/issues"
+  },
+  "homepage": "https://docs.ctfd.io",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.8.5",
+    "postcss-cli": "^7.1.1",
+    "prettier": "^2.0.5"
+  }
+}
