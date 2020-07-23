@@ -20,15 +20,15 @@ The CTFd developers will do their best to not introduce breaking changes
 but keep in mind that the plugin interface is still under development
 and could change.
 
-> **tip**
->
-> Official CTFd plugins are available at <https://ctfd.io/store>.
-> [Contact us](https://ctfd.io/contact/) regarding custom plugins and
-> special projects.
+{{% alert title="Tip" color="success" %}}
+Official CTFd plugins are available at <https://ctfd.io/store>.
+[Contact us](https://ctfd.io/contact/) regarding custom plugins and
+special projects.
+{{% /alert %}}
 
-> **tip**
->
-> Community plugins are available at <https://github.com/CTFd/plugins>.
+{{% alert title="Tip" color="success" %}}
+Community plugins are available at <https://github.com/CTFd/plugins>.
+{{% /alert %}}
 
 ## Architecture
 
@@ -247,12 +247,12 @@ order.
 The approach used by CTFd here is to give each "type" of challenge an ID
 and a name.
 
-> **tip**
->
-> You can see how CTFd implements its [default standard challenge
-> here](https://github.com/CTFd/CTFd/blob/master/CTFd/plugins/challenges/__init__.py).
-> You can also see how CTFd implements [dynamic scoring using this
-> feature](https://github.com/CTFd/CTFd/tree/master/CTFd/plugins/dynamic_challenges).
+{{% alert title="Tip" color="success" %}}
+You can see how CTFd implements its [default standard challenge
+here](https://github.com/CTFd/CTFd/blob/master/CTFd/plugins/challenges/__init__.py).
+You can also see how CTFd implements [dynamic scoring using this
+feature](https://github.com/CTFd/CTFd/tree/master/CTFd/plugins/dynamic_challenges).
+{{% /alert %}}
 
 Each challenge is implemented as a child class of the `BaseChallenge`
 and implements static methods named `create`, `read`, `update`,

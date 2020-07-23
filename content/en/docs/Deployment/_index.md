@@ -11,9 +11,9 @@ documentation](http://flask.pocoo.org/docs/latest/deploying/) on
 deploying a Flask based application should apply. This page will focus
 on the recommended ways to deploy CTFd.
 
-> **important**
->
-> The easiest way to get started is to use a [hosted CTFd instance](https://ctfd.io/hosting).
+{{% alert title="Important" color="success" %}}
+The easiest way to get started is to use a [hosted CTFd instance](https://ctfd.io/hosting).
+{{% /alert %}}
 
 ## Server Requirements
 
@@ -27,12 +27,12 @@ CTFd provides automatically generated [Docker
 images](https://hub.docker.com/r/ctfd/ctfd/) and one of the simplest
 means of deploying a CTFd instance is to use Docker Compose.
 
-> **caution**
->
-> While Docker can be a very simple means of deploying CTFd, it can make
-> debugging and receiving support more complicated. Before deploying
-> using Docker, be sure you have a cursory understanding of how Docker
-> works.
+{{% alert title="Caution" color="warning" %}}
+While Docker can be a very simple means of deploying CTFd, it can make
+debugging and receiving support more complicated. Before deploying
+using Docker, be sure you have a cursory understanding of how Docker
+works.
+{{% /alert %}}
 
 1.  Install [Docker](https://docs.docker.com/install/)
 2.  Install [Docker Compose](https://docs.docker.com/compose/install/)
@@ -49,20 +49,19 @@ means of deploying a CTFd instance is to use Docker Compose.
           - REDIS_URL=redis://cache:6379
           - WORKERS=4
 
-> **tip**
->
-> You can also run
-> `python -c "import os; f=open('.ctfd_secret_key', 'a+'); f.write(os.urandom(64)); f.close()"`
-> within the CTFd repo to generate a .ctfd_secret_key file.
+{{% alert title="Tip" color="info" %}}
+You can also run
+`python -c "import os; f=open('.ctfd_secret_key', 'a+'); f.write(os.urandom(64)); f.close()"`
+within the CTFd repo to generate a .ctfd_secret_key file.
+{{% /alert %}}
 
 5.  Run `docker-compose up`
 6.  You should now be able to access CTFd at <http://localhost:8000>
 
-> **note**
->
-> The default Docker Compose configuration files do not provide a
-> reverse proxy server or configure SSL/TLS. This is left as an exercise
-> to the reader by design.
+{{% alert title="Note" color="warning" %}}
+The default Docker Compose configuration files do not configure SSL/TLS. This is left as an exercise
+to the reader by design.
+{{% /alert %}}
 
 ## Standard WSGI Deployment
 
@@ -91,19 +90,19 @@ and has been installed against SQLite, Postgres, and MariaDB.
 By default CTFd will create a SQLite database if no database server has
 been configured.
 
-> **note**
->
-> CTFd makes use of the JSON data type which your database backend must
-> support.
+{{% alert title="Note" color="info" %}}
+CTFd makes use of the JSON data type which your database backend must support.
+{{% /alert %}}
 
-> **note**
->
-> CTFd is typicaly used with MySQL, MariaDB, or SQLite. Using CTFd with
-> Postgres is uncommon and could be deprecated in any version. Even
-> though Postgres may be part of the CTFd test suite, using Postgres as
-> your database backend is at your own peril. Any issues raised
-> regarding Postgres support will carry the expectation that the issue
-> author write an accompanying pull request to resolve said issue.
+{{% alert title="Note" color="info" %}}
+CTFd is typicaly used with MySQL, MariaDB, or SQLite. Using CTFd with
+Postgres is uncommon and could be deprecated in any version. Even
+though Postgres may be part of the CTFd test suite, using Postgres as
+your database backend is at your own peril.
+
+Any issues raised regarding Postgres support will carry the expectation
+that the issue author write an accompanying pull request to resolve said issue.
+{{% /alert %}}
 
 ### Caching Server
 
@@ -135,6 +134,10 @@ To access the internal gunicorn terminal session inside Vagrant run:
 > CTFd's Vagrantfile is not commonly used and is only community
 > supported
 
+{{% alert title="Note" color="warning" %}}
+CTFd's Vagrantfile is not commonly used and is only community supported
+{{% /alert %}}
+
 ## Debug Server
 
 The absolute simplest way to deploy CTFd merely involves running
@@ -144,12 +147,12 @@ kind of load. It is discussed here because the debugging server can make
 identifying bugs and misconfigurations easier. In addition, development
 mostly occurs using the debug server.
 
-> **important**
->
-> CTFd makes every effort to be an easy to setup application. However,
-> deploying CTFd for large amounts of users can be difficult.
->
-> Fully managed and maintained CTFd deployments are available at
-> <https://ctfd.io>. If you're interested in a specialized CTFd
-> deployment with custom features please [contact
-> us](https://ctfd.io/contact/).
+{{% alert title="Important" color="warning" %}}
+CTFd makes every effort to be an easy to setup application. However,
+deploying CTFd for large amounts of users can be difficult.
+
+Fully managed and maintained CTFd deployments are available at
+<https://ctfd.io>. If you're interested in a specialized CTFd
+deployment with custom features please [contact
+us](https://ctfd.io/contact/).
+{{% /alert %}}

@@ -12,12 +12,12 @@ themes. The CTFd core routes will load templates from the theme folder
 specified by the theme configuration value. This value can be configured
 in the admin panel.
 
-> **tip**
->
-> Official CTFd themes are available at <https://ctfd.io/store>.
-> [Contact us](https://ctfd.io/contact/) regarding custom themes and
-> special projects.
+{{% alert title="Tip" color="success" %}}
+Official CTFd themes are available at <https://ctfd.io/store>.
+[Contact us](https://ctfd.io/contact/) regarding custom themes and
+special projects.
+{{% /alert %}}
 
-> **tip**
->
-> Community themes are available at <https://github.com/CTFd/themes>.
+{{% alert title="Tip" color="success" %}}
+Community themes are available at <https://github.com/CTFd/themes>.
+{{% /alert %}}
