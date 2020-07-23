@@ -129,11 +129,6 @@ To access the internal gunicorn terminal session inside Vagrant run:
     vagrant ssh
     tmux attach ctfd
 
-> **note**
->
-> CTFd's Vagrantfile is not commonly used and is only community
-> supported
-
 {{% alert title="Note" color="warning" %}}
 CTFd's Vagrantfile is not commonly used and is only community supported
 {{% /alert %}}

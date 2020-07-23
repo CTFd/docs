@@ -135,13 +135,13 @@ See [Flask
 documentation](https://werkzeug.palletsprojects.com/en/0.15.x/middleware/proxy_fix/#werkzeug.middleware.proxy_fix.ProxyFix.)
 for full details.
 
-> **tip**
->
-> You can also specify a comma seperated set of numbers specifying the
-> reverse proxy configuration settings. For example to configure
-> x_for=1, x_proto=1, x_host=1, x_port=1, x_prefix=1 specify
-> 1,1,1,1,1. By setting the value to `True`, CTFd will default to the
-> above behavior with all proxy settings set to 1.
+{{% alert title="Tip" color="info" %}}
+You can also specify a comma seperated set of numbers specifying the
+reverse proxy configuration settings. For example to configure
+x_for=1, x_proto=1, x_host=1, x_port=1, x_prefix=1 specify
+1,1,1,1,1. By setting the value to `True`, CTFd will default to the
+above behavior with all proxy settings set to 1.
+{{% /alert %}}
 
 ### TEMPLATES_AUTO_RELOAD
 

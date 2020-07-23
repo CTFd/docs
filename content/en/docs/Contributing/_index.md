@@ -63,11 +63,11 @@ Python code in CTFd is linted with flake8, isort, and black.
 
 JavaScript and CSS are linted with prettier.
 
-> **tip**
->
-> The recommendation is to integrate all linters into your editor as
-> your changes will fail to pass if the lint checks fail. See the
-> `Makefile` for `make lint`
+{{% alert title="Tip" color="info" %}}
+The recommendation is to integrate all linters into your editor as
+your changes will fail to pass if the lint checks fail. See the
+`Makefile` for `make lint`
+{{% /alert %}}
 
 ## Testing
 
