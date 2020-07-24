@@ -73,23 +73,23 @@ your changes will fail to pass if the lint checks fail. See the
 
 ### Python
 
-Python tests are run using `pytest` on Travis. To run the test suite you
-can run make test. By default tests run against sqlite but this can be
-configured by setting the TESTING_DATABASE_URL environment variable.
+Python tests are run using `pytest` on Github Actions. To run the test
+suite locally you can run make test. By default tests run against sqlite
+but this can be configured by setting the `TESTING_DATABASE_URL` environment
+variable.
 
-CTFd v2 supports Python 2 and 3, however CTFd v3 is Python 3 only.
+CTFd v3 is Python 3 only. CTFd v2 supported Python 2 and 3.
 
 Tests are run in parallel with `pytest-xdist` and each test is run in
-its own database.
+isolation from other tests by creating it's own database and CTFd instance.
 
 ## Documentation
 
-CTFd's documentation is written using Sphinx and hosted by [Read the
-Docs](https://readthedocs.org/).
+CTFd's documentation is written using [Hugo](https://gohugo.io/) and hosted
+by [Netlify](https://www.netlify.com/).
 
-To build the documentation, you should go into the `docs` folder and run
-make html. The content output into the docs/\_build folder will be the
-resulting hosted output.
+To build the documentation, you should go to the [documentation repo](https://github.com/CTFd/docs)
+and follow the build instructions there.
 
 ## Tips & Tricks
 
