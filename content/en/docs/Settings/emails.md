@@ -6,7 +6,7 @@ title: "Email Settings"
 
 CTFd allows administrators to configure the content sent out in emails. For example, an admin can configure the email sent out to new users to have additional registration instructions.
 
-![](../../../images/config/email-content-settings.png)
+![](/images/config/email-content-settings.png)
 
 Under the email tab in the Admin Panel Settings page you can customize the content of the email subject and body of the following emails:
 
@@ -35,4 +35,4 @@ For example: <code>{ctf_name}</code>
 
 CTFd allows for admins to configure what email server they'd like to send emails through. This can be accessed from the email tab in the Admin Panel Settings page.
 
-![](../../../images/config/email-server-settings.png)
+![](/images/config/email-server-settings.png)

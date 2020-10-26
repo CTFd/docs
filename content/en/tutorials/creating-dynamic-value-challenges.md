@@ -17,7 +17,7 @@ The current implementation requires the challenge to keep track of three values:
 
 The value decay logic is implemented with the following math:
 
-<img src="../../../images/challenges/decay-function.png" alt="" style="max-width:250px;">
+<img src="/images/challenges/decay-function.png" alt="" style="max-width:250px;">
 
 or in pseudo code:
 

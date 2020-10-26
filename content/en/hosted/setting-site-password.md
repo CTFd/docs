@@ -8,7 +8,7 @@ Hosted CTFd instances can be restricted to a private audience by setting a site 
 
 Site passwords are useful during development and when you wish to keep your CTFd instance private to a selected group.
 
-![image](../../../images/hosted/instances/hosted-site-password.png)
+![image](/images/hosted/instances/hosted-site-password.png)
 
 Keep in mind that site passwords are not intended to provide significant security as they are intended to be shared with end-users.
 
@@ -20,6 +20,6 @@ Keep in mind that site passwords are not intended to provide significant securit
 
 3. Enter your chosen site password. Letters, numbers, dashes, and underscores only with a max length of 20.
 
-    ![image](../../../images/hosted/instances/hosted-site-password-form.png)
+    ![image](/images/hosted/instances/hosted-site-password-form.png)
 
 4. To remove your site password, submit an empty password

@@ -36,7 +36,7 @@ To set this custom domain use the following instructions:
 2.  Select your chosen instance and click the blue gear icon on the
     right.
 
-![image](../../../images/hosted/domains/domain-blue-gear.png)
+![image](/images/hosted/domains/domain-blue-gear.png)
 
 3.  Follow the instructions provided to set your custom domain to a
     CNAME of your `*.ctfd.io` subdomain. You will need to set the custom
@@ -51,7 +51,7 @@ To set this custom domain use the following instructions:
         provisioning SSL certificates and identifying user IP addresses.
     </div>
 
-    ![image](../../../images/hosted/domains/domain-setting-input.png)
+    ![image](/images/hosted/domains/domain-setting-input.png)
 
 4.  Once your domain is set, you can still access your CTFd instance
     through the `*.ctfd.io` subdomain. To remove or change your domain
