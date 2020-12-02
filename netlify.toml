@@ -9,3 +9,6 @@
 
 [context.production.environment]
   HUGO_VERSION = "0.73"
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.73"
