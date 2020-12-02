@@ -6,3 +6,9 @@
 [build]
   publish = "public"
   command = "git submodule update -f --init --recursive && yarn install && hugo"
+
+[context.production.environment]
+  HUGO_VERSION = "0.73.0"
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.73.0"
