@@ -51,7 +51,7 @@ works.
 
 {{% alert title="Tip" color="info" %}}
 You can also run
-`python -c "import os; f=open('.ctfd_secret_key', 'a+'); f.write(os.urandom(64)); f.close()"`
+`cat /dev/urandom | head -c64 > .ctfd_secret_key`
 within the CTFd repo to generate a .ctfd_secret_key file.
 {{% /alert %}}
 
